@@ -1,1 +1,70 @@
-Generic single-database configuration.
+Vehicle Inventory Management System CLI
+Problem Statement
+
+Automobile dealerships often face challenges in efficiently managing their vehicle inventory. Outdated information, difficulty in searching for specific vehicles, and a lack of centralized control over inventory can lead to operational inefficiencies. To address these issues, we propose the development of a Vehicle Inventory Management System CLI application. This application will enable dealerships to easily add, update, and search for vehicles based on various criteria, such as make, model, year, and price.
+Solution
+
+Our solution is to create a robust Vehicle Inventory Management System CLI application that encompasses the following features to address the problem statement:
+
+    # Add Vehicles: Dealerships can easily add new vehicles to their inventory by providing details such as make, model, year, price, and any additional information.
+
+    # Search Vehicles: The application allows users to search for vehicles based on various criteria, including make, model, year, and price range. This feature ensures that users can quickly locate specific vehicles in their inventory.
+
+   # Data Integrity: The application maintains data integrity by implementing relationships between tables. This ensures that the data is accurate and consistent.
+
+   # Efficient Operations: With the CLI interface, users can perform operations efficiently, reducing manual effort and operational inefficiencies.
+
+
+# Functional Commands   
+ Commands:
+  add-customer        Add a new customer.
+  add-transaction     Add a new transaction.
+  add-vehicle         Add a new vehicle to the inventory.
+  delete-customer     Delete a customer by ID.
+  delete-transaction  Delete a transaction by ID.
+  list-customers      List all customers in the inventory.
+  list-transactions   List all transactions in the inventory.
+  list-vehicles       List all vehicles in the inventory.
+  search-customer     Search for a customer by ID.
+  search-transaction  Search for a transaction by ID.
+  search-vehicle      Search for a vehicle by MAKE.
+  
+# Usage
+
+To use the Vehicle Inventory Management System CLI, follow these steps:
+
+    1.Clone the repository to your local machine:
+
+    bash
+    git clone https://github.com/BMO5031/AUTOMOTIVE-INVENTORY
+
+    2.Navigate to the project directory:
+
+    bash
+
+    cd vehicle-inventory-cli
+
+# Dependencies
+  SQLite
+
+# Contributing
+
+  If you'd like to contribute to this project, please follow these guidelines:
+
+    Fork the repository on GitHub.
+    Create a new branch for your feature or bug fix.
+    Make your changes and commit them with descriptive commit messages.
+    Push your changes to your forked repository.
+    Create a pull request to the main repository's master branch.
+
+# License
+
+ This project is licensed under the MIT License - see the LICENSE.md file for details.
+
+Contact
+
+If you have any questions or suggestions, please feel free to contact us at martinodhis77@gmail.com
+
+
+
+

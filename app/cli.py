@@ -34,16 +34,6 @@ def search_vehicle(vehicle_make):
     else:
         click.echo(f'Vehicle ID: {vehicle.id}, Make: {vehicle.make}, Model: {vehicle.model}, Year: {vehicle.year}, Price: {vehicle.price}')
 
-@cli.command(name='delete-vehicle')
-@click.option('--make', required=True, help='Make of the vehicle to delete')
-def delete_vehicle(make):
-    with SessionLocal() as db:
-        vehicle_to_delete = db.query(Vehicle).filter(Vehicle.make == make).first()
-        if vehicle_to_delete:
-            db.delete(vehicle_to_delete)
-            click.echo(f"Deleted vehicle with make: {make}")
-        else:
-            click.echo(f"No vehicle found with make: {make}")
 
 @cli.command()
 def list_vehicles():
